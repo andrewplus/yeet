@@ -1,0 +1,90 @@
+<!-- help me -->
+<!doctype html>
+<html>
+	<head>
+		<title>Random Starboard Quote-o-matic</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="quote.js"></script>
+		<script>
+			$( document ).ready(function() {
+				randomQuote();
+				quoteToElement(".quote");
+
+				$( ".newQuote" ).click(function() { 
+					randomQuote();
+					quoteToElement(".quote");
+				});
+			});
+		</script>
+
+		<style>
+			body, html {
+				margin: 0;
+			}
+
+			.tweetBox {
+				width: 500px;
+				min-height: 70px;
+				padding: 12px 9px;
+				padding-left: 70px;
+				padding-top: 30px;
+				box-sizing: border-box;
+				background-image: url(tweets/1.png);
+				background-repeat: no-repeat;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 14px;
+				line-height: 20px;
+			}
+
+			.stats {
+				width: 220px;
+				height: 16px;
+				margin-top: 14px;
+				background: url(tweets/stats.png);
+			}
+
+			.btn {
+				display: inline-block;
+				padding: 10px 40px;
+				color: white;
+				background: #80b4f9;
+				transition: 300ms;
+			}
+
+			.btn:hover {
+				opacity: 0.8;
+				cursor: pointer;
+			}
+		</style>
+
+		<script>
+			USER_AMOUNT = 4;
+			user = 1;
+			$( document ).ready(function() {
+				$( ".changeTweet" ).click(function() { 
+					if (user >= USER_AMOUNT) {
+						user = 1;
+					} else {
+						user = user + 1;
+					}
+					console.log(user);
+					$( ".tweetBox" ).css( "background-image", "url(tweets/" + user + ".png)" );
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="tweetBox">
+			I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. I really like lasaga. 
+			<div class="stats"></div>
+		</div>
+
+		<div class="btn changeTweet">Change user</div>
+	</body>
+</html>

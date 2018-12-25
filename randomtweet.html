@@ -14,10 +14,24 @@
 			$( document ).ready(function() {
 				randomQuote();
 				quoteToElement(".quote");
+			});
 
-				$( ".newQuote" ).click(function() { 
+			$( ".newQuote" ).click(function() { 
 					randomQuote();
 					quoteToElement(".quote");
+				});
+
+			USER_AMOUNT = 4;
+			user = 1;
+			$( document ).ready(function() {
+				$( ".changeTweet" ).click(function() { 
+					if (user >= USER_AMOUNT) {
+						user = 1;
+					} else {
+						user = user + 1;
+					}
+					console.log(user);
+					$( ".tweetBox" ).css( "background-image", "url(tweets/" + user + ".png)" );
 				});
 			});
 		</script>
@@ -50,13 +64,6 @@
 				font-family: 'Poppins', sans-serif;
 			}
 
-			.quote {
-				font-style: italic;
-			}
-
-			.quote:before { content: '"'; }
-			.quote:after { content: '"'; }
-
 			.btn {
 				display: inline-block;
 				padding: 10px 40px;
@@ -80,14 +87,47 @@
 				width: 1em;
 				height: 1em;
 			}
+
+			.tweetBox {
+				width: 500px;
+				min-height: 70px;
+				height: auto;
+				padding: 12px 9px;
+				padding-left: 70px;
+				padding-top: 30px;
+				box-sizing: border-box;
+				background-image: url(tweets/1.png);
+				background-repeat: no-repeat;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 14px;
+				line-height: 20px;
+				text-align: left;
+				background-color: white;
+				word-wrap: break-word;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.stats {
+				width: 220px;
+				height: 16px;
+				margin-top: 14px;
+				background: url(tweets/stats.png);
+			}
 		</style>
 	</head>
 
 	<body>
 		<div class="container">
 			<h1>Random Starboard Message</h1>
-			<p class="quote"> </p>
-			<div class="btn newQuote">New quote</div>
+			<p>(Tweet Edition!)</p>
+			<div class="tweetBox">
+				<span class="quote"></span> 
+				<div class="stats"></div>
+			</div>
+
+			<br>
+			<div class="btn changeTweet">Change account</div>
 		</div>
 	</body>
 </html>
