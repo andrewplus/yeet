@@ -6,6 +6,9 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins|Staatliches|Montserrat" rel="stylesheet">
 		<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+		<link href="universalstyle.css" rel="stylesheet">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -35,92 +38,6 @@
 				});
 			});
 		</script>
-
-		<style>
-			body {
-				background: url(stars.jpg);
-			}
-
-			.container {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-				width: 50vw;
-				margin-top: 3vw;
-				text-align: center;
-				font-family: 'Poppins', sans-serif;
-				padding: 4vw;
-				box-sizing: border-box;
-				background: rgba(255, 255, 255, 0.6);
-				border-radius: 30px;
-			}
-
-			h1 {
-				font-family: 'Staatliches', cursive;
-				letter-spacing: 0.3vw;
-			}
-
-			p {
-				font-family: 'Poppins', sans-serif;
-			}
-
-			.btn {
-				display: inline-block;
-				padding: 10px 40px;
-				color: white;
-				background: #80b4f9;
-				transition: 300ms;
-			}
-
-			.btn:hover {
-				opacity: 0.8;
-				cursor: pointer;
-			}
-
-			@media only screen and (max-width: 600px) {
-				.container {
-					width: 95vw;
-				}
-			}
-
-			@media only screen and (max-width: 1222px) {
-				.tweetBox {
-					width: 100% !important;
-				}
-			}
-
-			.emote {
-				width: 1em;
-				height: 1em;
-			}
-
-			.tweetBox {
-				width: 500px;
-				min-height: 70px;
-				height: auto;
-				padding: 12px 9px;
-				padding-left: 70px;
-				padding-top: 30px;
-				box-sizing: border-box;
-				background-image: url(tweets/1.png);
-				background-repeat: no-repeat;
-				font-family: 'Montserrat', sans-serif;
-				font-size: 14px;
-				line-height: 20px;
-				text-align: left;
-				background-color: white;
-				word-wrap: break-word;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-			.stats {
-				width: 220px;
-				height: 16px;
-				margin-top: 14px;
-				background: url(tweets/stats.png);
-			}
-		</style>
 	</head>
 
 	<body>
@@ -133,7 +50,9 @@
 			</div>
 
 			<br>
-			<div class="btn changeTweet">Change account</div>
+			<div class="btn" onclick="randomQuote();quoteToElement('.quote');">New quote</div>
+			<div class="btn changeTweet orange">Change account</div>
+			<a href="random"><div class="btn red forward">Classic Generator</div></a>
 		</div>
 	</body>
 </html>

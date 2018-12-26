@@ -1,0 +1,114 @@
+/* universal style for starboard generators
+why am i investing so much time into this */
+
+/* general */
+body {
+	margin: 0;
+	background: url(stars.jpg);
+}
+
+.container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50vw;
+	margin-top: 3vw;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	padding: 4vw;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 95vw;
+	}
+}
+
+h1 {
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 0.3vw;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* buttons (default is blue) */
+
+.btn {
+	display: inline-block;
+	padding: 10px 40px;
+	color: white;
+	background: #80b4f9;
+	transition: 300ms;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.btn.orange {
+	background: #e4bb7d;
+}
+
+.btn.red {
+	background: #e4827d;
+}
+
+.btn:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.btn.forward:hover:after {
+	content: '>';
+	opacity: 1;
+	position: absolute;
+	padding-left: 10px;
+}
+
+/* custom emotes */
+
+.emote {
+	width: 1em;
+	height: 1em;
+}
+
+/* tweets */
+
+.tweetBox {
+	width: 500px;
+	min-height: 70px;
+	height: auto;
+	padding: 12px 9px;
+	padding-left: 70px;
+	padding-top: 30px;
+	box-sizing: border-box;
+	background-image: url(tweets/1.png);
+	background-repeat: no-repeat;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: left;
+	background-color: white;
+	word-wrap: break-word;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.stats {
+	width: 220px;
+	height: 16px;
+	margin-top: 14px;
+	background: url(tweets/stats.png);
+}
+
+@media only screen and (max-width: 1222px) {
+	.tweetBox {
+		width: 100%; !important;
+	}
+}
