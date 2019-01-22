@@ -1,0 +1,113 @@
+/* You've found a secret link! Give yourself a pat on the back and copy the link below into your browser's URL bar. */
+/* http://pizzarollsyeet.com/secret.html */
+
+body, html {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url(img/yeet.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 20vw auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Staatliches', cursive;
+}
+
+h1.main {
+  margin-bottom: 2em;
+}
+
+main {
+  width: 50%;
+  margin: 0 auto;
+  padding: 40px 25px;
+  box-sizing: border-box;
+  text-align: center;
+  background: white;
+}
+
+.col {
+  display: inline-block;
+  width: 32%;
+  box-sizing: border-box;
+}
+
+.month {
+  width: 12vw;
+  height: 12vw;
+  border: 2px solid black;
+  background-color: white;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  display: block;
+  background-size: 100% 100%;
+}
+
+.jan:after { position: absolute; content:'January'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
+.feb:after { position: absolute; content:'February'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
+.mar:after { position: absolute; content:'March'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
+.apr:after { position: absolute; content:'April'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
+.may:after { position: absolute; content:'May'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
+.jun:after { position: absolute; content:'June'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
+.jul:after { position: absolute; content:'July'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
+.aug:after { position: absolute; content:'August'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
+.sep:after { position: absolute; content:'September'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
+.oct:after { position: absolute; content:'October'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
+.nov:after { position: absolute; content:'November'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
+.dec:after { position: absolute; content:'December'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
+
+input {
+  width: 70%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: 1px solid grey;
+}
+
+/* Customize background images for months here */
+/* .jan { background-image: url(img/) } */
+/* .feb { background-image: url(img/) } */
+/* .mar { background-image: url(img/) } */
+/* .apr { background-image: url(img/) } */
+/* .may { background-image: url(img/) } */
+/* .jun { background-image: url(img/) } */
+/* .jul { background-image: url(img/) } */
+/* .aug { background-image: url(img/) } */
+/* .sep { background-image: url(img/) } */
+/* .oct { background-image: url(img/) } */
+/* .nov { background-image: url(img/) } */
+/* .dec { background-image: url(img/) } */
+
+/* mobile */
+@media only screen and (max-width: 864px) {
+	main {
+		width: 100%;
+    margin: 0;
+	}
+
+  .month {
+    width: 22vw;
+    height: 22vw;
+    font-size: 12px;
+  }
+
+  .jan:after { width: 22vw; margin-top: calc(22vw / 2 - 12px) }
+  .feb:after { width: 22vw; margin-top: calc(22vw / 2 - 12px) }
+  .mar:after { width: 22vw; margin-top: calc(22vw / 2 - 12px) }
+  .apr:after { width: 22vw; margin-top: calc(22vw / 2 - 12px) }
+  .may:after { width: 22vw; margin-top: calc(22vw / 2 - 12px) }
+  .jun:after { width: 22vw; margin-top: calc(22vw / 2 - 12px) }
+  .jul:after { width: 22vw; margin-top: calc(22vw / 2 - 12px) }
+  .aug:after { width: 22vw; margin-top: calc(22vw / 2 - 12px) }
+  .sep:after { width: 22vw; margin-top: calc(22vw / 2 - 12px) }
+  .oct:after { width: 22vw; margin-top: calc(22vw / 2 - 12px) }
+  .nov:after { width: 22vw; margin-top: calc(22vw / 2 - 12px) }
+  .dec:after { width: 22vw; margin-top: calc(22vw / 2 - 12px) }
+}
