@@ -50,8 +50,8 @@ main {
   background-size: 100% 100%;
 }
 
-.jan:after { position: absolute; content:'January'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
-.feb:after { position: absolute; content:'February'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
+/*.jan:after { position: absolute; content:'January'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) } 
+.feb:after { position: absolute; content:'February'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }*/
 .mar:after { position: absolute; content:'March'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
 .apr:after { position: absolute; content:'April'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
 .may:after { position: absolute; content:'May'; color: grey; display: block; width: 12vw; margin-top: calc(12vw / 2 - 16px) }
@@ -72,8 +72,8 @@ input {
 }
 
 /* Customize background images for months here */
-/* .jan { background-image: url(img/) } */
-/* .feb { background-image: url(img/) } */
+.jan { background-image: url(img/jan.jpg) } 
+/*.feb { background-image: url(img/) } */
 /* .mar { background-image: url(img/) } */
 /* .apr { background-image: url(img/) } */
 /* .may { background-image: url(img/) } */
